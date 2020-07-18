@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Join Us!</title>
+        <link href="./style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div>
+                <div>Sign Up</div>
+                <div>
+                    <form action="./index.html" method="POST" onsubmit="return check()">
+                        <div>
+                            <label for="name">Full Name:</label>
+                            <input type="text" placeholder="Enter your full name: " id="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address:</label>
+                            <input type="email" placeholder="Enter your email: " id="email" required>
+                        </div>
+                        <div>
+                            <label for="pw1">Password:</label>
+                            <input type="password" placeholder="Enter your password: " id="pw1">
+                        </div>
+                        <div>
+                            <label for="pw2">Confirm Password:</label>
+                            <input type="password" placeholder="Confirm your password: " id="pw2">
+                        </div>
+                        <div>
+                            <label for="nterest">Select your major interest(s) with us: </label>
+                            <label for="web"> <input type="checkbox" name="web" id="web"> Web Development </label>
+                            <label for="d-mark"> <input type="checkbox" name="digital" id="d-mark"> Digital Marketing </label>
+                            <label for="graphics"> <input type="checkbox" name="graphics" id="graphics"> Graphics Design </label>
+                            <label for="seo"> <input type="checkbox" name="seo" id="seo"> SEO & Content Development </label>
+                            <label for="gameDev"> <input type="checkbox" name="game" id="gameDev"> Game Development </label>
+                            <label for="train"> <input type="checkbox" name="train" id="train"> Training & Tutorials </label>
+                            <label for="blog"> <input type="checkbox" name="blog" id="blog"> Blogs & Articles </label>                            
+                        </div>
+                        <p id="info"></p>
+
+                        <div>
+                            <button>Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
