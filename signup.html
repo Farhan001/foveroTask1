@@ -6,27 +6,30 @@
     </head>
     <body>
         <main>
-            <div>
-                <div>Sign Up</div>
-                <div>
+            <div class="container">
+                <div class="head">Sign Up</div>
+                <div class="subcontainer">
                     <form action="./index.html" method="POST" onsubmit="return check()">
-                        <div>
-                            <label for="name">Full Name:</label>
+                        <span class="note"><span class="require">*</span>Required</span>
+                        <div class="block">
+                            <label for="name">Full Name:<span class="require">*</span></label>
                             <input type="text" placeholder="Enter your full name: " id="name" required>
                         </div>
-                        <div>
-                            <label for="email">Email Address:</label>
+                        <div class="block">
+                            <label for="email">Email Address:<span class="require">*</span></label>
                             <input type="email" placeholder="Enter your email: " id="email" required>
                         </div>
-                        <div>
-                            <label for="pw1">Password:</label>
+                        <div class="block">
+                            <label for="pw1">Password:<span class="require">*</span></label>
                             <input type="password" placeholder="Enter your password: " id="pw1">
+                            <span class="note"><span class="require">#</span>Password must be at least 6 characters long with at least one of "#" or "$"</span>
                         </div>
-                        <div>
-                            <label for="pw2">Confirm Password:</label>
+                        <div class="block">
+                            <label for="pw2">Confirm Password:<span class="require">*</span></label>
                             <input type="password" placeholder="Confirm your password: " id="pw2">
+                            <span class="note"><span class="require">#</span>Passwords must match</span>
                         </div>
-                        <div>
+                        <div class="checkbox">
                             <label for="nterest">Select your major interest(s) with us: </label>
                             <label for="web"> <input type="checkbox" name="web" id="web"> Web Development </label>
                             <label for="d-mark"> <input type="checkbox" name="digital" id="d-mark"> Digital Marketing </label>
@@ -39,7 +42,7 @@
                         <p id="info"></p>
 
                         <div>
-                            <button>Submit</button>
+                            <button type="submit">Submit</button>
                         </div>
 
                     </form>

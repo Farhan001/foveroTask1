@@ -5,21 +5,28 @@ const check = () => {
     let signs = ["#", "$", "(", ")"];
 
 
-    if (p1.value !== "" && p2.value !== ""){
-        if (p1.value.length < 6){
-            document.getElementById("info").innerHTML = "Your password isn't strong enough!";
-            return false;
-        }        
-        if (p1.value !== p2.value){
+    if (p1.value !== "" && p2.value !== ""){        
+        if (p1.value === p2.value){
+            if (p1.value.length < 6){
+                document.getElementById("info").innerHTML = "Your password isn't strong enough!";
+                return false;
+            }  
+            if (!(p1.value.includes("$") || p1.value.includes("#"))){
+                document.getElementById("info").innerHTML = "Your password isn't strong enough!";
+                return false;
+            } 
+            alert("You are good to go! \n We'll redirect you to Sign-in now.");
+            return true;
+        }
+        else {
             document.getElementById("info").innerHTML = "Your passwords do not match!";
             p1.value = "";
             p2.value = "";
             return false;       
         }
-        if (p1.value === p2.value){
-            alert("You are good to go! \n We'll redirect you to Sign-in now.");
-            return true;
-        }
+       // if (p1.value === p2.value){
+            
+       // }
     }
         
     document.getElementById("info").innerHTML = "Fill in the required sections";

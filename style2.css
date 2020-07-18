@@ -5,6 +5,91 @@ html, body{
     margin: 0;
     padding: 0;
 }
+main{
+    padding: 30px;
+}
+/*.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}*/
 #info{
     color: red;
+}
+.block input{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    font-size: 12pt ;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.block input:focus{
+    box-shadow: 0 0 3px black;
+}
+.block input:hover{
+    box-shadow: 0 0 3px blue;
+}
+.checkbox label{
+    display: block;
+    cursor: pointer;
+}
+.checkbox input:hover{
+    box-shadow: 0 0 3px blue;
+
+}
+.head{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 30px/60%;
+    background-color: rgb(128, 119, 119);
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+}
+.subcontainer{
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+label{
+    margin-bottom: 10px;
+}
+.require{
+    color: red;
+    font-size: 12pt;
+}
+.note{
+    color: grey;
+    font-size: 11pt;
+    display: block;
+    margin-bottom: 10px;
+}
+button{
+    display: block;
+    max-width: 200px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 16pt;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px grey;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(106, 106, 240);
+    box-shadow: 0 0 5px black;
 }
