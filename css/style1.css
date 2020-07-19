@@ -7,7 +7,7 @@ html, body{
 }
 @font-face{
     font-family: intro;
-    src: url(QuickKiss.ttf);
+    src: url(../fonts/QuickKiss.ttf);
 }
 .container{
     padding-top: 150px;
