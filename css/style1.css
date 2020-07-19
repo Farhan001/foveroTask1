@@ -10,7 +10,7 @@ html, body{
     src: url(../fonts/QuickKiss.ttf);
 }
 .container{
-    padding-top: 150px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
@@ -23,6 +23,7 @@ html, body{
     font-family: intro;
     font-size: 48pt;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 .further-info{
     max-width: 800px;
@@ -35,9 +36,11 @@ html, body{
 }
 .note{
     font-size: 14pt;
+    padding: 30px;
 }
 .signIn{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
 }
 .block input{
     display: block;
@@ -103,7 +106,7 @@ footer{
     font-size: 12pt;
     margin-bottom: 10px;
 }
-@media (max-width: 600px){
+@media (max-width: 1000px){
     .container{
         padding: 50px 30px;
     }
@@ -111,16 +114,22 @@ footer{
         flex-direction: column;
     }
     .intro{
-        font-size: 36pt;
+        font-size: 50pt;
+    }
+    .intro2{
+        font-size: 18pt;
     }
     .further-info{
         text-align: center;
         border-right: none;
         margin-right: 0;
         padding-right: 0;
+        max-width: 900px;
     }
     button{
         margin-bottom: 20px;
+        font-size: 16pt;
+        max-width: 150px;
     }
     .intro3{
         padding-bottom: 30px;
@@ -129,7 +138,11 @@ footer{
     .signup, .forgot{
         text-align: center;
     }
+    .signIn, .block input{
+        font-size: 16pt;
+    }
     footer{
         visibility: visible;
+        font-size: 14pt;
     }
 }

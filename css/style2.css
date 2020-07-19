@@ -6,7 +6,7 @@ html, body{
     padding: 0;
 }
 main{
-    padding: 30px;
+    padding: 50px;
 }
 /*.container{
     max-width: 1000px;
@@ -26,6 +26,18 @@ main{
     border: none;
     border-bottom: 2px solid grey;
 }
+@media (max-width: 1000px){
+    .block input{
+        font-size: 24pt;
+        margin-bottom: 30px;
+    }
+    #pw1, #pw2{
+        margin-bottom: 5px;
+    }
+    #note3, #note4{
+        margin-top: 40px;
+    }
+}
 .block input:focus{
     box-shadow: 0 0 3px black;
 }
@@ -36,9 +48,13 @@ main{
     display: block;
     cursor: pointer;
 }
+@media (max-width: 1000px){
+    .checkbox label{
+        font-size: 28pt;
+    }
+}
 .checkbox input:hover{
     box-shadow: 0 0 3px blue;
-
 }
 .head{
     max-width: 200px;
@@ -53,6 +69,12 @@ main{
     color: white;
     font-family: monospace;
 }
+@media (max-width: 1000px){
+    .head{
+        font-size: 36pt;
+        max-width: 300px;
+    }
+}
 .subcontainer{
     font-size: 14pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +84,11 @@ main{
     max-width: 800px;
     margin: 0 auto;
 }
+@media (max-width: 1000px){
+    .subcontainer{
+        font-size: 28pt;
+    }
+}
 label{
     margin-bottom: 10px;
 }
@@ -69,11 +96,21 @@ label{
     color: red;
     font-size: 12pt;
 }
+@media (max-width: 1000px){
+    .require{
+        font-size: 20pt;
+    }
+}
 .note{
     color: grey;
     font-size: 11pt;
     display: block;
     margin-bottom: 10px;
+}
+@media (max-width: 1000px){
+    .note{
+        font-size: 20pt;
+    }
 }
 button{
     display: block;
@@ -93,4 +130,10 @@ button{
 button:hover{
     background-color: rgb(106, 106, 240);
     box-shadow: 0 0 5px black;
+}
+@media (max-width: 1000px){
+    button{
+        font-size: 36pt;
+        max-width: 500px;
+    }
 }
