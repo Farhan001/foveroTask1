@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: intro;
+    src: url(QuickKiss.ttf);
+}
+.container{
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    font-weight: 400;
+}
+.info{
+    display: flex;
+}
+.intro{
+    font-family: intro;
+    font-size: 48pt;
+    margin-bottom: 20px;
+}
+.further-info{
+    max-width: 800px;
+    margin-right: 50px;
+    padding-right: 10px;
+    border-right: solid 3px black;
+}
+.intro2{
+    font-family: monospace;
+}
+.note{
+    font-size: 14pt;
+}
+.signIn{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block input{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    font-size: 12pt ;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.block input:focus{
+    box-shadow: 0 0 3px black;
+}
+.block input:hover{
+    box-shadow: 0 0 3px blue;
+}
+.checkbox label{
+    display: block;
+    cursor: pointer;
+}
+.checkbox input:hover{
+    box-shadow: 0 0 3px blue;
+}
+button{
+    display: block;
+    max-width: 100px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 12pt;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px grey;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: rgb(106, 106, 240);
+    box-shadow: 0 0 5px black;
+}
+.forgot{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+a:hover{
+    border-bottom: solid 2px grey;
+}
+footer{
+    visibility: hidden; 
+    text-align: center; 
+    color: grey; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px){
+    .container{
+        padding: 50px 30px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .intro{
+        font-size: 36pt;
+    }
+    .further-info{
+        text-align: center;
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    button{
+        margin-bottom: 20px;
+    }
+    .intro3{
+        padding-bottom: 30px;
+        border-bottom: black solid 2px;
+    }
+    .signup, .forgot{
+        text-align: center;
+    }
+    footer{
+        visibility: visible;
+    }
+}

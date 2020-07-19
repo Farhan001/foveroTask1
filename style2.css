@@ -51,6 +51,7 @@ main{
     font-size: 20pt;
     text-align: center;
     color: white;
+    font-family: monospace;
 }
 .subcontainer{
     font-size: 14pt;
