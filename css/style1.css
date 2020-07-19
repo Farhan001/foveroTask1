@@ -128,8 +128,8 @@ footer{
     }
     button{
         margin-bottom: 20px;
-        font-size: 16pt;
-        max-width: 150px;
+        font-size: 30pt;
+        max-width: 350px;
     }
     .intro3{
         padding-bottom: 30px;
@@ -139,7 +139,10 @@ footer{
         text-align: center;
     }
     .signIn, .block input{
-        font-size: 16pt;
+        font-size: 28pt;
+    }
+    .checkbox, .checkbox input{
+        font-size: 30pt;
     }
     footer{
         visibility: visible;
